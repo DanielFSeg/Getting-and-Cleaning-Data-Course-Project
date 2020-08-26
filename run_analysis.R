@@ -67,6 +67,28 @@ tidy_db <- full_db %>%
     
     pivot_wider(names_from = feature, values_from = mean)
 
+
+## Correcting names of variables
+
+names(tidy_db) <- gsub("^t", "Time", names(tidy_db))
+
+names(tidy_db) <- gsub("^f", "Frequency", names(tidy_db))
+
+names(tidy_db) <- gsub("BodyBody", "Body", names(tidy_db))
+
+names(tidy_db) <- gsub("Acc", "Accelerometer", names(tidy_db))
+
+names(tidy_db) <- gsub("Gyro", "Gyroscope", names(tidy_db))
+
+names(tidy_db) <- gsub("Mag", "Magnitude", names(tidy_db))
+
+names(tidy_db) <- gsub("freq", "Frequency", names(tidy_db))
+
+names(tidy_db) <- gsub("mean", "Mean", names(tidy_db))
+
+names(tidy_db) <- gsub("std", "STD", names(tidy_db))
+
+
 ## Saving .txt file
 
 write.table(tidy_db, file = "tidydata.txt", row.name=FALSE)
