@@ -11,10 +11,10 @@ Data set used can be downloaded from [UCI data set](https://d396qusza40orc.cloud
 # Prequisites
 Below are prequisites required before running [run_analysis.R](run_analysis.R):
 
-- Package: [reshape2 package](http://cran.r-project.org/web/packages/reshape2/index.html). Use `install.package("reshape2")` to install the package if not already installed.
+- Package: [tidyverse package](https://cran.r-project.org/web/packages/tidyverse/index.html). Use `install.package("tidyverse")` to install the package if not already installed.
 - Download the [UCI data set](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
-- Unzip the file in folder `getdata_projectfiles_UCI HAR Dataset` in the working directory.
+- Unzip the file in folder `data` in the working directory.
 
 # Output
 
-Output of the project is tidy data set [tidy.txt](tidy.txt) file. More details about the file and steps invlolved in creating it can be found in [CodeBook](CodeBook.md).
+Output of the project is tidy data set [tidydata.txt](tidydata.txt) file. More details about the file and steps invlolved in creating it can be found in [CodeBook](CodeBook.md).
