@@ -19,13 +19,13 @@ Data set used can be downloaded from [UCI data set](https://d396qusza40orc.cloud
 
 ## Output File
 
-This part describes all of the data fields in the [tidy.txt](tidy.txt) file.
+This part describes all of the data fields in the [tidydata.txt](tidydata.txt) file.
 
 ### Identifiers
 
-- `Subject` - ID of the test subject
+- `subject_id` - ID of the test subject
   - 1 - 30
-- `Activity` - Activity that subjects were performing for the corresponding measurement
+- `activity` - Activity that subjects were performing for the corresponding measurement
   - Walking
   - Walking Upstairs
   - Walking Downstairs
