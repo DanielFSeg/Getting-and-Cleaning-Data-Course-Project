@@ -8,8 +8,6 @@ Data set used can be downloaded from [UCI data set](https://d396qusza40orc.cloud
 
 ## Transformations
 
-The script, `run_analysis.R` reads in the experiment data from test and train folder (excluding raw data in Inertial Signals folder) and performs below steps to get a tidy dataset containing mean values of the measurements:
-
 - Both the processed test and training datasets are read into R and merged into one data set.
 - Column headers are changed for identifiers as described in `Identifiers` section below.
 - Column names are changed for measurements as per `features.txt` found in the zip file.
@@ -17,7 +15,7 @@ The script, `run_analysis.R` reads in the experiment data from test and train fo
 - The activity identifiers are replaced with the activity labels based on the `activity_labels.txt` file.
 - Column names are expanded e.g. `acc` to `Accelerometer` etc., invalid characters like `-`, `()` are removed and `BodyBody` is replaced with `Body`.
 - Mean is calculated for the remaining measurement based on corresponding subject and activity.
-- The summary dataset is written to the disk, in `tidy.txt`.
+- The summary dataset is written to the disk, in `tidydata.txt`.
 
 ## Output File
 
